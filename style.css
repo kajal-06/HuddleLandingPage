@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.15em;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  background-color: #fff;
+  padding: 15px 60px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+}
+
+.btn-primary {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+}
+
+.container {
+  width: 1080px;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex > div {
+  flex: 1;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-start ul {
+  padding-right: 40px;
+}
+
+.align-start .centered {
+  width: 50%;
+}
+
+/* navigation and showcase scetion */
+header {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-size: cover;
+  background-position: center center;
+  background-color: hsl(193, 100%, 96%);
+  padding: 40px 0;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.showcase-img {
+  margin-left: 20%;
+  width: 80%;
+}
+
+/* text with image section */
+.box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 20px 0;
+  padding: 60px;
+}
+
+.box img {
+  width: 80%;
+}
+
+/* get started section */
+.small-box {
+  display: inline-block;
+  position: relative;
+  margin-bottom: -50%;
+}
+
+/* footer styling */
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  padding: 180px 0 60px;
+  color: #fff;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: right;
+}
+
+footer img {
+  margin-bottom: 20px;
+}
+
+/* responsive design */
+
+@media screen and (max-width: 780px) {
+  body {
+    text-align: center;
+  }
+
+  nav.flex {
+    flex-direction: row;
+  }
+
+  .showcase-img {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  footer ul {
+    text-align: left;
+    width: 100%;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}
